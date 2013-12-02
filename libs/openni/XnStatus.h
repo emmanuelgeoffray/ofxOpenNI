@@ -41,31 +41,31 @@ typedef XnUInt32 XnStatus;
 //---------------------------------------------------------------------------
 
 /**
- * Converts a Xiron Status enumerator into a meaningful error string.
+ * Converts a Xiron Status_ enumerator into a meaningful error string.
  *
- * @param	Status	[in]	The input Xiron Status to be converted to a string.
+ * @param	Status	[in]	The input Xiron Status_ to be converted to a string.
  *
  * @return A string representation of the Xiron status.
  */
-XN_C_API const XnChar* XN_C_DECL xnGetStatusString(const XnStatus Status);
+XN_C_API const XnChar* XN_C_DECL xnGetStatusString(const XnStatus Status_);
 
 /**
-* Gets the name of a Xiron Status as a string.
+* Gets the name of a Xiron Status_ as a string.
 *
-* @param	Status	[in]	The input Xiron Status.
+* @param	Status	[in]	The input Xiron Status_.
 *
 * @return A string representation of the Xiron status name.
 */
-XN_C_API const XnChar* XN_C_DECL xnGetStatusName(const XnStatus Status);
+XN_C_API const XnChar* XN_C_DECL xnGetStatusName(const XnStatus Status_);
 
 /**
 * Prints a user message with a description of the error.
 *
-* @param	Status			[in]	The input Xiron Status.
+* @param	Status			[in]	The input Xiron Status_.
 * @param	csUserMessage	[in]	A user message.
 *
 */
-XN_C_API void XN_C_DECL xnPrintError(const XnStatus Status, const XnChar* csUserMessage);
+XN_C_API void XN_C_DECL xnPrintError(const XnStatus Status_, const XnChar* csUserMessage);
 
 //---------------------------------------------------------------------------
 // Enums
